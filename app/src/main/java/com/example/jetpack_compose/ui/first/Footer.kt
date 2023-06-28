@@ -1,5 +1,6 @@
 package com.example.jetpack_compose.ui.first
 
+import android.util.Log
 import androidx.compose.foundation.layout.height
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
@@ -42,16 +43,16 @@ fun Footer(
                 }
             },
             actions = {
-                contentsList.forEach {
+                contentsList.forEach { contents ->
                     NavigationBarItem(
                         selected = currentDestination?.hierarchy?.any { selected ->
-                            selected.route == it.navigationRoute
+                            selected.route == contents.navigationRoute
                         } == true,
                         onClick = {
-                            contentsNavigation.navigate(it.navigationRoute)
+                            contentsNavigation.navigate(contents.navigationRoute)
                         },
                         icon = {
-                            Icon(it.icon, "Bottom Bar Icon")
+                            Icon(contents.icon, "Bottom Bar Icon")
                         }
                     )
                 }

@@ -20,7 +20,7 @@ const val listRoute = "List"
 const val favoriteRoute = "Favorite"
 
 val contentsList: List<PageContents> = listOf(
-    PageContents(firstRoute, Icons.Default.List),
+    PageContents(listRoute, Icons.Default.List),
     PageContents(favoriteRoute, Icons.Default.Favorite)
 )
 
