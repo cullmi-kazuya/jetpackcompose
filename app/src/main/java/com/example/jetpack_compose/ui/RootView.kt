@@ -13,7 +13,7 @@ import com.example.jetpack_compose.ui.second.SecondView
 import com.example.jetpack_compose.ui.theme.JetpackcomposeTheme
 
 const val firstRoute = "First"
-const val secondViewRoute = "Favorite"
+const val secondViewRoute = "Second"
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
